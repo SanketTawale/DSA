@@ -42,7 +42,7 @@ public class Gcd_Or_Hcf {
                   }
      */
    private static int optimizedEuclidGcd(int a, int b) {
-       /*The OptimizedEuclidean algorithm   :
+       /*The OptimizedEuclidean algorithm  by gabriel lame  :
                               1.)  If a=b  stop --  Otherwise, go to step 2.
                               2.)  If a > b, replace a with a % b  i.e. a= a % b , and go back to step 1.
                               3.)  If b > a, replace b with b % a  i.e. b= b % a , and go back to step 1.
