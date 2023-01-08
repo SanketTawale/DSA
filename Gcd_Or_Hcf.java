@@ -25,9 +25,9 @@ public class Gcd_Or_Hcf {
     */
 
    /*     The Euclidean algorithm   :
-                            1.) If a = ba=b, stop -- the GCD of aa and aa is, of course, aa. Otherwise, go to step 2.
-                            2.)If a > ba>b, replace aa with a - ba−b, and go back to step 1.
-                            3.)If b > ab>a, replace bb with b - ab−a, and go back to step 1.
+                            1.) If a=b  stop --  Otherwise, go to step 2.
+                            2.)If a > b, replace a with a - b  i.e. a=a-b , and go back to step 1.
+                            3.)If b > a, replace b with b − a  i.e. b=b-a , and go back to step 1.
 
 
                 static int euclidGcd(int a, int b){
@@ -42,6 +42,11 @@ public class Gcd_Or_Hcf {
                   }
      */
    private static int optimizedEuclidGcd(int a, int b) {
+       /*The OptimizedEuclidean algorithm   :
+                              1.)  If a=b  stop --  Otherwise, go to step 2.
+                              2.)  If a > b, replace a with a % b  i.e. a= a % b , and go back to step 1.
+                              3.)  If b > a, replace b with b % a  i.e. b= b % a , and go back to step 1.
+       * */
        while (a!=0 && b!=0){
            if(a>b){
                a = a % b;
