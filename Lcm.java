@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Lcm {
 
     private static int findLcm(int a, int b) {
-        return (a * b)/optimizedEculidGcd(a,b);
+        return (a * b)/ optimizedEuclidGcd(a,b);
     }
 
-    private static int optimizedEculidGcd(int a, int b) {
+    private static int optimizedEuclidGcd(int a, int b) {
         while (a != 0 && b !=0){
             if(a>b){
                 a = a % b;
