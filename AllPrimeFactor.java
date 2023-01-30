@@ -33,7 +33,7 @@ public class AllPrimeFactor {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the no  : ");
         int n = scanner.nextInt();
-        // allPrimeFact(n);
-        allPrimeFactors(n);
+         allPrimeFact(n);
+       // allPrimeFactors(n);
     }
 }
